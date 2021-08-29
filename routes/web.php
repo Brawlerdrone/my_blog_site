@@ -16,8 +16,13 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/admin',function()
+{
+    return view('admin');
+    /* this route will be update to first go to the admin login page*/
+});
+
+
 Route::get('/welcome', 'PagesController@welcome');
 
 
-Route::get('/createblog', 'PostsController@create');
-Route::post('post','PostsController@store');
