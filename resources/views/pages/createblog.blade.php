@@ -3,7 +3,7 @@
 @extends('layouts.master')
 
 @section('content')
-    
+<!-Changes made-!>    
    <div class="container custom-login">
    {!! Form::open(['action' => 'PostsController@store' , 'method' => 'POST']) !!}
         <div class="form-group">
